@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Double Array Values</title>
+</head>
+<body>
+  <h2>Double the Array Values</h2>
+
+  <p>Original array: [25, 45, 78, 20]</p>
+  <button onclick="showDoubledArray()">Show Doubled Array</button>
+
+  <p id="result"></p>
+
+  <script>
+    function doubleArray(arr) {
+      return arr.map(function(num) {
+        return num * 2;
+      });
+    }
+
+    function showDoubledArray() {
+      const originalArray = [25, 45, 78, 20];
+      const doubledArray = doubleArray(originalArray);
+      document.getElementById("result").innerText = "Doubled array: " + doubledArray.join(", ");
+    }
+  </script>
+</body>
+</html>
